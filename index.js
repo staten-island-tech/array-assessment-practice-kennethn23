@@ -86,8 +86,14 @@ const titles = [
 
 //Array of authors and the book they wrote
 //"--- wrote --- in ---"
+books.forEach((book) => console.log(book.authorFirst + " " + book.authorLast + " wrote " + book.name + " in " + book.publishDate));
 
 //Sort books from oldest to most recent
+function oldestToYoungest (a, b) {
+  return a - b;
+};
+// const sortedBooks = books.publishDate.sort(oldestToYoungest);
+console.log(books.publishDate);
 
 //sort books alphabetically
 
