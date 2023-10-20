@@ -89,11 +89,11 @@ const titles = [
 books.forEach((book) => console.log(book.authorFirst + " " + book.authorLast + " wrote " + book.name + " in " + book.publishDate));
 
 //Sort books from oldest to most recent
-function oldestToYoungest (a, b) {
-  return a - b;
-};
-// const sortedBooks = books.publishDate.sort(oldestToYoungest);
-console.log(books.publishDate);
+function sortByPublish () {
+  const sortedDate = books.sort((book1, book2) => book1.publishDate - book2.publishDate);
+  console.log(sortedDate)
+}
+sortByPublish();
 
 //sort books alphabetically
 
